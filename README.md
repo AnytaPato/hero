@@ -1,8 +1,8 @@
-## App de Super heroes creado con 
+# App de Super heroes creado con 
  
- # React create-react-app
- # React react-router-dom
- # Ajax 
- # SuperHero API
- # Bootstrap
+ ## React create-react-app
+ ## React react-router-dom
+ ## Ajax 
+ ## SuperHero API
+ ## Bootstrap
 
