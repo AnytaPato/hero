@@ -10,11 +10,21 @@ body {
 }
 
 a {
-  color: rgb(247, 247, 9);
+  color: rgb(4, 250, 16);
   text-decoration: none;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.googleLogin{
+  position: relative;
+  top: 50%
+}
+
+.facebookLogin{
+  position: absolute;
+  top: 50%
 }

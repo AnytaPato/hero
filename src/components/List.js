@@ -1,10 +1,16 @@
 import React from "react";
-
+import Navbar from "./Header";
+import Cards from "./Cards";
 
 
 function List () {
 return(
- <h1 className="text-center">Buscá tu super Héroe</h1>
+    <div> 
+    <Navbar />
+    <div className="App-header">
+    <Cards />
+    </div>
+    </div>
  
 )
 }
