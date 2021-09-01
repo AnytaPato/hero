@@ -4,7 +4,7 @@ import React from "react";
 
 function List () {
 return(
- <h1>Lista de super Héroes</h1>
+ <h1 className="text-center">Buscá tu super Héroe</h1>
  
 )
 }

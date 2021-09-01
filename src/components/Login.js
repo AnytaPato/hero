@@ -1,38 +1,45 @@
-import React from 'react';
-import FacebookReduxLogin from "facebook-login-redux-react";
-import {Link} from "react-router-dom";
-import {FloatingLabel, Button, Form} from "react-bootstrap";
+import React, { Component } from 'react';
+import FacebookLogin from 'react-facebook-login';
+import GoogleLogin from 'react-google-login';
+import { Link } from 'react-router-dom';
 
+class Login extends Component {
 
-const Login = () => {
-    return (
- <div className="container row mb-3">
-     <hr />
-     <h1>Login</h1>
-     <hr />
-      <>
-  <FloatingLabel
-    controlId="floatingInput"
-    label="Email address"
-    className="mb-3"
-  >
-    <Form.Control type="email" placeholder="name@example.com" />
-  </FloatingLabel>
-  <FloatingLabel controlId="floatingPassword" label="Password">
-    <Form.Control type="password" placeholder="Password" />
-  </FloatingLabel>
+render() {
+const responseFacebook = (response) => {
+console.log(response);
+}
 
-    <hr />
-  <Button variant="primary" type="submit">
-    Submit
-  </Button>
-  <hr />
-  <h1> Iniciar sesion en Facebook </h1>
-  <hr />
-  <FacebookReduxLogin />
-</>    
+const responseGoogle = (response) => {
+console.log(response);
+}
+
+return (
+    
+<div className="container row text-center">
+<h1 className="text-center" >LOGIN</h1>
+<hr></hr>
+<FacebookLogin
+appId="1088597931155576" 
+fields="name,email,picture"
+callback={responseFacebook}
+/>
+<hr />
+<hr />
+
+<GoogleLogin
+clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
+buttonText="LOGIN WITH GOOGLE"
+onSuccess={responseGoogle}
+onFailure={responseGoogle}
+/>
+
+<hr></hr>
+<Link to="/Hero">ENTRAR</Link>
 </div>
-    )
+);
+}
 }
 
 export default Login;
+
