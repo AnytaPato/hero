@@ -14,14 +14,28 @@
 }
 
 .App-header {
-  background-color: rgb(8, 131, 49);
+  
+  background-image: url("Assets/bg1-generals.jpg");
+  background-position: center;
+  background-size    : cover;
+  background-repeat  : no-repeat;
+  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: rgb(10, 10, 10);
+  
+}
+
+.Search{
+  margin-top: 2em;
+}
+
+.Card {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .App-link {

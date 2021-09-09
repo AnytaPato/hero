@@ -4,7 +4,7 @@ import {Navbar, Nav, Container} from 'react-bootstrap';
 const  Footer = () => {
     return (
         <div>
-          <Navbar bg="light" variant="light">
+          <Navbar bg="success" variant="light">
     <Container>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll"></Navbar.Collapse>

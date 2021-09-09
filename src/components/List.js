@@ -1,15 +1,17 @@
 import React from "react";
-import Navbar from "./Header";
+import Header from "./Header";
+import Footer from "./Footer";
 import Cards from "./Cards";
 
 
 function List () {
 return(
     <div> 
-    <Navbar />
+    <Header />
     <div className="App-header">
     <Cards />
     </div>
+    <Footer />
     </div>
  
 )

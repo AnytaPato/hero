@@ -12,6 +12,8 @@ const Home = () => {
             <header className="App-header">
               <img src={ process.env.PUBLIC_URL + "/images/super.png"} width="200" alt="Superhero"/>
               <h1>Bienvenidos</h1> 
+               <h1>al mejor</h1>
+              <h4>Buscador de Super héroes </h4>
             </header>
             <div>
               <Footer /> 

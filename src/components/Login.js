@@ -43,8 +43,6 @@ buttonText="LOGIN WITH GOOGLE"
 onSuccess={responseGoogle}
 onFailure={responseGoogle}
 />
-</div>
-<div>
 <Link to="/Hero"><h1>Entrar</h1></Link> 
 </div>
 </div>

@@ -1,10 +1,12 @@
 import React from 'react';
+
 import {Navbar, Nav, Container} from 'react-bootstrap';
+
 
 const Header = () => {
   return (
-    <div>
-      <Navbar bg="light" variant="light">
+     <div>
+      <Navbar bg="success" variant="light">
     <Container>
     <Navbar.Brand href="/"><h1>HERO APP</h1></Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -14,12 +16,13 @@ const Header = () => {
     navbarScroll>
       <Nav.Link href="/About">About</Nav.Link>
       <Nav.Link href="/Login">Login</Nav.Link>
-      <Nav.Link href="#pricing">Buscador</Nav.Link>
+      <Nav.Link href="/List">Buscador</Nav.Link>
     </Nav>
     </Container>
   </Navbar>
     </div>
   )
+ 
 }
 
 export default Header;
